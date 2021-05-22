@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    background-color: #181818;
+    font-family: 'Poppins', sans-serif;
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#ff4f81,#f0f);
+    clip-path: circle(40% at right 80%);
+}
+body::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#ff4f81,#f0f);
+    clip-path: circle(40% at left 20%);
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.container .app{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    height: 80%;
+}
+
+.container .app .row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    background-color: #ff4f81;
+    border-radius: 10px;
+}
+.container .app .row input{
+    width: 90%;
+    outline: none;
+    border: none;
+    height: 80px;
+    font-size: 40px;
+    font-family: 'Pattaya', sans-serif;
+    text-align: center;
+    background-color: rgb(245, 146, 245);
+    border-radius: 15px;
+    color: #fff;
+}
+
+.container .app .row input::placeholder{
+    color: #fff;
+}
+
+
+
+.container .app .row .column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+}
+.container .app .row .column button{
+    font-size: 60px;
+    font-family: 'Pattaya', sans-serif;
+    background: none;
+    border: none;
+    color: #fff;
+    background-color: rgba(245, 146, 245, 0.966);
+    padding: 0px 25px;
+    border-radius: 26px;
+}
+
+.container .app .row .column button:hover{
+    cursor: pointer;
+    background-color: rgba(245, 146, 245, 0.349);
+    transition: .5;
+}
+
+
